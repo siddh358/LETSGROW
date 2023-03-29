@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT ENROLLEMENT FORM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h2>STUDENT ENROLLMENT FORM</h2>
+    <div class="d-flex justify-content-center p-1" style="background-color: rgb(218, 88, 116);">
+        <div class="bg-light p-4">
+            <form autocomplete="off" onsubmit="onFormSubmit()" class="form-group">
+                    <div>
+                        <label for="fullName">Full Name</label>
+                        <input type="text" name="fullName" id="fullName" class="form-control" >
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" class="form-control">
+                    </div>
+                    <div>
+                        <label for="contactno">Contact No</label>
+                        <input type="text" name="contactno" id="contactno" class="form-control">
+                    </div>
+                    <div>
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="address" class="form-control">
+                    </div>
+                    <div>
+                        <label for="city">City</label><br>
+                        <input type="text" name="city" id="city" class="form-control">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit" class="btn btn-success ">
+                        <input type="reset" value="Reset" class="btn btn-warning">
+                    </div>
+        </div>
+        <div class="p-2" style="background-color: #aa839c;">
+            <h4>ENROLLED LIST</h4>
+             <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Contact No</th>
+                            <th>Address</th>
+                            <th>City</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-light">
+
+                    </tbody>
+                </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
